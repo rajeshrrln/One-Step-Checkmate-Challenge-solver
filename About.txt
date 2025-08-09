@@ -1,0 +1,24 @@
+--> This program is aimed to solve the "One-step Checkmate" challenge which is popular in many chess platforms.
+--> It is comparatively easier than many of the chess puzzles, yet very complex to automate.
+--> Thought of creating a python program which can solve the puzzle very fast and accurate.
+Assumptions:
+    - The board is expected to be normal and legal arrangement.
+    - The board is assumed to be given in a matrix format.
+    - All the blacks are assumed to start from the bottom side of the matrix.
+    - All the whites are assumed to start from the top side of the matrix.
+    - Assumed that always the chance to move is of black's.
+        --> although these assumptions might seem too many they can be easily chaged accordingly.
+    - The special moves like "en passant" and "castling" as the game procedure from the start is unknown.
+    - every piece is represented by two letters
+        > 1st letter indicates the color (w or b)
+        > 2nd letter indicates the type of piece (k,q,r,b,n and p) representing King, Queen, Rook, Bishop, Knight and a Pawn.
+        > Empty cell is indicated by '00'
+Merits:
+    - Considered cases like like Promotion of the Pawn into Queen and Knight both.
+    - Double forward step capability of Pawn from the initial state.
+    - All legal moves are considered and evaluated.
+Demerits:
+    - Definitely not the most optimized version.
+    - Unlikely to detect 'stalemate' case, tries for only checkmate.
+    - Special cases neglected like 'en passant' and 'castling'
+    - No faster way to convert real boards or online game boards into the required matrix form accurately.
